@@ -1,0 +1,104 @@
+{
+  "entities": {
+    "Teacher": {
+      "title": "Teacher",
+      "description": "O'qituvchi yoki administrator hisobi",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Kirish ID raqami (masalan 20090915)" },
+        "fullName": { "type": "string", "description": "F.I.SH." },
+        "role": { "type": "string", "enum": ["admin", "teacher"], "description": "Foydalanuvchi roli" },
+        "password": { "type": "string", "description": "Parol" },
+        "createdAt": { "type": "number", "description": "Yaratilgan vaqti (timestamp)" }
+      },
+      "required": ["id", "fullName", "role", "password", "createdAt"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Test fanlari yoki yo'nalishlari bo'limi",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Bo'lim identifikatori" },
+        "name": { "type": "string", "description": "Bo'lim nomi" },
+        "description": { "type": "string", "description": "Bo'lim tavsifi" },
+        "defaultDurationMinutes": { "type": "number", "description": "Standart ajratilgan vaqt (daqiqa)" },
+        "questionCountTarget": { "type": "number", "description": "Test savollari soni" },
+        "createdAt": { "type": "number", "description": "Yaratilgan vaqti" }
+      },
+      "required": ["id", "name", "description", "defaultDurationMinutes", "questionCountTarget", "createdAt"]
+    },
+    "Question": {
+      "title": "Question",
+      "description": "Test savoli (variantli yoki yozma)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Savol ID" },
+        "categoryId": { "type": "string", "description": "Tegishli bo'lim ID" },
+        "orderIndex": { "type": "number", "description": "Tartib raqami" },
+        "type": { "type": "string", "enum": ["multiple_choice", "written"], "description": "Savol turi" },
+        "questionText": { "type": "string", "description": "Savol matni" },
+        "options": { "type": "array", "description": "Variantlar ro'yxati (4 ta)" },
+        "correctOptionIndex": { "type": "number", "description": "To'g'ri variant indeksi" },
+        "correctWrittenAnswer": { "type": "string", "description": "To'g'ri yozma javob" }
+      },
+      "required": ["id", "categoryId", "orderIndex", "type", "questionText"]
+    },
+    "AccessCode": {
+      "title": "AccessCode",
+      "description": "O'quvchilar uchun 2 daqiqalik bir martalik test kodi",
+      "type": "object",
+      "properties": {
+        "code": { "type": "string", "description": "6 xonali unikal kod" },
+        "categoryId": { "type": "string", "description": "Bo'lim ID" },
+        "categoryName": { "type": "string", "description": "Bo'lim nomi" },
+        "durationMinutes": { "type": "number", "description": "Imtihon davomiyligi" },
+        "questionCount": { "type": "number", "description": "Savollar soni" },
+        "createdAt": { "type": "number", "description": "Yaratilgan vaqti" },
+        "expiresAt": { "type": "number", "description": "Amal qilish muddati (2 daqiqa)" }
+      },
+      "required": ["code", "categoryId", "categoryName", "durationMinutes", "questionCount", "createdAt", "expiresAt"]
+    },
+    "TestResult": {
+      "title": "TestResult",
+      "description": "O'quvchi topshirgan test natijasi",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Natija ID" },
+        "studentName": { "type": "string", "description": "O'quvchi ismi" },
+        "categoryId": { "type": "string", "description": "Bo'lim ID" },
+        "categoryName": { "type": "string", "description": "Bo'lim nomi" },
+        "scorePercent": { "type": "number", "description": "To'plangan foiz" },
+        "correctCount": { "type": "number", "description": "To'g'ri javoblar soni" },
+        "totalQuestions": { "type": "number", "description": "Jami savollar soni" },
+        "durationSpentSeconds": { "type": "number", "description": "Sarflangan vaqt" },
+        "isPassed": { "type": "boolean", "description": "75% o'tish chegarasidan oshdimi" },
+        "answersBreakdown": { "type": "array", "description": "Savolma-savol tahlil" },
+        "submittedAt": { "type": "number", "description": "Topshirilgan vaqt" },
+        "terminationReason": { "type": "string", "description": "Tugash sababi" }
+      },
+      "required": ["id", "studentName", "categoryId", "categoryName", "scorePercent", "correctCount", "totalQuestions", "durationSpentSeconds", "isPassed", "submittedAt"]
+    }
+  },
+  "firestore": {
+    "/teachers/{teacherId}": {
+      "schema": "Teacher",
+      "description": "O'qituvchi va admin profillari"
+    },
+    "/categories/{categoryId}": {
+      "schema": "Category",
+      "description": "Test toifalari va fanlar"
+    },
+    "/questions/{questionId}": {
+      "schema": "Question",
+      "description": "Barcha test savollari"
+    },
+    "/accessCodes/{code}": {
+      "schema": "AccessCode",
+      "description": "O'quvchilar uchun faol 2 daqiqalik kodlar"
+    },
+    "/results/{resultId}": {
+      "schema": "TestResult",
+      "description": "Test topshirgan o'quvchilarning natijalari"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "TestSayti - O'quv Markazlari Online Test Tizimi",
+  "description": "O'quv markazlari va bolalar uchun zamonaviy online test portali, o'qituvchi va o'quvchi kabinetlari, 2 daqiqalik unikal kodlar, fullscreen/Esc monitoringi, xavfsiz backend va Telegram bot integratsiyasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

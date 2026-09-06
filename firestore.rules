@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Teachers & Admins
+    match /teachers/{teacherId} {
+      allow read, write: if true;
+    }
+
+    // Categories
+    match /categories/{categoryId} {
+      allow read, write: if true;
+    }
+
+    // Questions
+    match /questions/{questionId} {
+      allow read, write: if true;
+    }
+
+    // 2-minute Access Codes
+    match /accessCodes/{code} {
+      allow read, write: if true;
+    }
+
+    // Student Test Results
+    match /results/{resultId} {
+      allow read, write: if true;
+    }
+  }
+}
