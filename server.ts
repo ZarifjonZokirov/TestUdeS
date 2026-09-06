@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import { dbInstance } from './server/db.ts';
+import { dbInstance } from './backend/db.ts';
 
   const app = express();
   const PORT = 3000;

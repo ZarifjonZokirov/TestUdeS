@@ -29,7 +29,7 @@ interface TestSaytiDatabase {
   results: TestResult[];
 }
 
-const DATA_DIR = path.join(process.cwd(), 'server', 'data');
+const DATA_DIR = path.join(process.cwd(), 'backend', 'data');
 const DB_FILE = path.join(DATA_DIR, 'test_sayti.json');
 
 // Ensure directory exists
