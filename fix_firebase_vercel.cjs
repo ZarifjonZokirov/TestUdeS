@@ -1,4 +1,7 @@
-import { initializeApp, getApps, getApp } from 'firebase/app';
+const fs = require('fs');
+let code = fs.readFileSync('server/firebase.ts', 'utf8');
+
+const newCode = `import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getFirestore, Firestore } from 'firebase/firestore';
 import fs from 'fs';
 import path from 'path';
@@ -35,3 +38,7 @@ try {
 }
 
 export { firestore, config as firebaseConfigData };
+`;
+
+fs.writeFileSync('server/firebase.ts', newCode);
+console.log("server/firebase.ts fixed for Vercel to prevent crash on init.");

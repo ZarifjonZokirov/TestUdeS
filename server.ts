@@ -22,7 +22,8 @@ import { dbInstance } from './server/db.ts';
   });
 
   // 2. Auth: Teacher / Admin Login
-  app.post('/api/auth/login', (req, res) => {
+  app.post('/api/auth/login', (req, res, next) => {
+    try {
     const { id, password } = req.body;
     if (!id || !password) {
       return res.status(400).json({ error: 'ID raqam va parol kiritilishi shart' });
@@ -42,6 +43,9 @@ import { dbInstance } from './server/db.ts';
         role: teacher.role,
       }
     });
+    } catch (e) {
+      next(e);
+    }
   });
 
   // 3. Teachers Management
@@ -259,7 +263,19 @@ import { dbInstance } from './server/db.ts';
 
   
 
-export default app; // Vercel API uchun asosiy eksport
+
+  // 9. Global Error Handler (Vercel debug uchun)
+  app.use((err, req, res, next) => {
+    console.error('GLOBAL ERROR:', err);
+    res.status(500).json({
+      error: 'Internal Server Error',
+      message: err.message,
+      stack: err.stack,
+      path: req.path
+    });
+  });
+
+  export default app; // Vercel API uchun asosiy eksport
 
 // Lokal va oddiy server (Render/Local) uchun ishga tushirish qismi
 async function startLocalServer() {

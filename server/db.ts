@@ -490,7 +490,8 @@ class TestSaytiDB {
 
   private loadData(): TestSaytiDatabase {
     try {
-      if (fs.existsSync(DB_FILE)) {
+    try {
+      if (!process.env.VERCEL && fs.existsSync(DB_FILE)) {
         const content = fs.readFileSync(DB_FILE, 'utf-8');
         const parsed = JSON.parse(content);
         // Ensure master admin 20090915 always exists
@@ -514,6 +515,10 @@ class TestSaytiDB {
     const initial = getInitialData();
     this.persist(initial);
     return initial;
+    } catch (e) {
+      console.error("Critical error in loadData:", e);
+      return { teachers: [], categories: [], questions: [], accessCodes: [], sessions: {}, results: [] };
+    }
   }
 
   private persist(dataToSave = this.data) {
