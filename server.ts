@@ -1,6 +1,5 @@
 import express from 'express';
 import path from 'path';
-import { createServer as createViteServer } from 'vite';
 import { dbInstance } from './server/db.ts';
 
   const app = express();
@@ -266,6 +265,7 @@ export default app; // Vercel API uchun asosiy eksport
 async function startLocalServer() {
 // Vite middleware setup
   if (process.env.NODE_ENV !== 'production') {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
