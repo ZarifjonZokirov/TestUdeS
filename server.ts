@@ -3,7 +3,6 @@ import path from 'path';
 import { createServer as createViteServer } from 'vite';
 import { dbInstance } from './server/db.ts';
 
-async function startServer() {
   const app = express();
   const PORT = 3000;
 
@@ -259,7 +258,13 @@ async function startServer() {
     }
   });
 
-  // Vite middleware setup
+  
+
+export default app; // Vercel API uchun asosiy eksport
+
+// Lokal va oddiy server (Render/Local) uchun ishga tushirish qismi
+async function startLocalServer() {
+// Vite middleware setup
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
       server: { middlewareMode: true },
@@ -279,4 +284,6 @@ async function startServer() {
   });
 }
 
-startServer();
+if (!process.env.VERCEL) {
+  startLocalServer();
+}

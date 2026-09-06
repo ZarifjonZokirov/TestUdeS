@@ -1,172 +1,144 @@
 {
   "teachers": [
     {
-      "createdAt": 1788603703247,
+      "id": "20090915",
       "password": "ZZOKIROV2009@z",
       "fullName": "Zarifjon Zokirov (Bosh Admin)",
-      "id": "20090915",
-      "role": "admin"
+      "role": "admin",
+      "createdAt": 1788603703247
     }
   ],
   "categories": [
     {
-      "name": "Hayotiy savol",
-      "questionCountTarget": 2,
       "description": "Boshlangich",
-      "id": "cat-021u5ll",
       "defaultDurationMinutes": 1,
+      "questionCountTarget": 2,
+      "name": "Hayotiy savol",
+      "id": "cat-021u5ll",
       "createdAt": 1788606563250
     },
     {
-      "id": "cat-xvrt9dj",
-      "name": "AI tomonidan yaratilgan test",
-      "description": "System Test via AI",
       "defaultDurationMinutes": 10,
       "questionCountTarget": 10,
-      "createdAt": 1788666465279
-    },
-    {
-      "id": "cat-zernpyk",
+      "description": "System Test via AI",
+      "createdAt": 1788666499388,
       "name": "Mukammal Test",
-      "description": "System Test via AI",
-      "defaultDurationMinutes": 10,
-      "questionCountTarget": 10,
-      "createdAt": 1788666488024
-    },
-    {
-      "id": "cat-g002amu",
-      "name": "Mukammal Test",
-      "description": "System Test via AI",
-      "defaultDurationMinutes": 10,
-      "questionCountTarget": 10,
-      "createdAt": 1788666499388
+      "id": "cat-g002amu"
     },
     {
       "id": "cat-oadl180",
+      "defaultDurationMinutes": 10,
+      "createdAt": 1788666510685,
       "name": "Mukammal Test 4",
       "description": "System Test via AI",
+      "questionCountTarget": 10
+    },
+    {
+      "questionCountTarget": 10,
+      "createdAt": 1788666465279,
+      "id": "cat-xvrt9dj",
+      "description": "System Test via AI",
+      "defaultDurationMinutes": 10,
+      "name": "AI tomonidan yaratilgan test"
+    },
+    {
+      "questionCountTarget": 10,
+      "defaultDurationMinutes": 10,
+      "id": "cat-zernpyk",
+      "createdAt": 1788666488024,
+      "name": "Mukammal Test",
+      "description": "System Test via AI"
+    },
+    {
+      "id": "cat-43jc8mw",
+      "name": "Vercel Test Category",
+      "description": "System Test via AI for Vercel",
       "defaultDurationMinutes": 10,
       "questionCountTarget": 10,
-      "createdAt": 1788666510685
+      "createdAt": 1788670704252
     }
   ],
   "questions": [
     {
+      "type": "multiple_choice",
+      "options": [
+        "Toshkent",
+        "Samarqand",
+        "Buxoro",
+        "Xiva"
+      ],
+      "questionText": "O'zbekistonning poytaxti qayer?",
+      "id": "q-5ijvnmdnscp",
       "correctOptionIndex": 0,
-      "id": "q-7u8gyh5",
+      "categoryId": "cat-oadl180"
+    },
+    {
+      "questionText": "Aziz kim",
+      "orderIndex": 1,
+      "categoryId": "cat-021u5ll",
+      "correctOptionIndex": 0,
       "options": [
         "Odam",
         "Alkash",
         "Djigar",
         "Kot"
       ],
-      "categoryId": "cat-021u5ll",
-      "questionText": "Aziz kim",
       "type": "multiple_choice",
-      "orderIndex": 1
+      "id": "q-7u8gyh5"
     },
     {
-      "categoryId": "cat-021u5ll",
-      "questionText": "Ismiz nima",
-      "id": "q-d8dfvuw",
       "type": "written",
+      "questionText": "Ismiz nima",
+      "correctOptionIndex": 0,
+      "id": "q-d8dfvuw",
+      "categoryId": "cat-021u5ll",
       "orderIndex": 2,
       "options": [
         "Variant A",
         "Variant B",
         "Variant C",
         "Variant D"
-      ],
-      "correctOptionIndex": 0
+      ]
     },
     {
-      "categoryId": "cat-xvrt9dj",
-      "questionText": "O'zbekistonning poytaxti qayer?",
-      "type": "multiple_choice",
-      "options": [
-        "Toshkent",
-        "Samarqand",
-        "Buxoro",
-        "Xiva"
-      ],
-      "correctOptionIndex": 0
-    },
-    {
-      "categoryId": "cat-xvrt9dj",
-      "questionText": "Al Xorazmiy qachon tug'ilgan?",
-      "type": "written",
       "correctWrittenAnswer": "783",
-      "exactMatchRequired": false
-    },
-    {
-      "categoryId": "cat-zernpyk",
-      "questionText": "O'zbekistonning poytaxti qayer?",
-      "type": "multiple_choice",
-      "options": [
-        "Toshkent",
-        "Samarqand",
-        "Buxoro",
-        "Xiva"
-      ],
-      "correctOptionIndex": 0
-    },
-    {
-      "categoryId": "cat-zernpyk",
-      "questionText": "Al Xorazmiy qachon tug'ilgan?",
-      "type": "written",
-      "correctWrittenAnswer": "783",
-      "exactMatchRequired": false
-    },
-    {
-      "categoryId": "cat-g002amu",
-      "questionText": "O'zbekistonning poytaxti qayer?",
-      "type": "multiple_choice",
-      "options": [
-        "Toshkent",
-        "Samarqand",
-        "Buxoro",
-        "Xiva"
-      ],
-      "correctOptionIndex": 0
-    },
-    {
-      "categoryId": "cat-g002amu",
-      "questionText": "Al Xorazmiy qachon tug'ilgan?",
-      "type": "written",
-      "correctWrittenAnswer": "783",
-      "exactMatchRequired": false
-    },
-    {
-      "id": "q-5ijvnmdnscp",
       "categoryId": "cat-oadl180",
-      "questionText": "O'zbekistonning poytaxti qayer?",
+      "exactMatchRequired": false,
+      "questionText": "Al Xorazmiy qachon tug'ilgan?",
+      "type": "written",
+      "id": "q-gcs15lx3lc"
+    },
+    {
+      "id": "q-3o7omuswvsn",
+      "categoryId": "cat-43jc8mw",
+      "questionText": "Vercel qaysi til va frameworklar uchun juda mashhur?",
       "type": "multiple_choice",
       "options": [
-        "Toshkent",
-        "Samarqand",
-        "Buxoro",
-        "Xiva"
+        "React/Next.js",
+        "Python/Django",
+        "PHP/Laravel",
+        "Java/Spring"
       ],
       "correctOptionIndex": 0
     },
     {
-      "id": "q-gcs15lx3lc",
-      "categoryId": "cat-oadl180",
-      "questionText": "Al Xorazmiy qachon tug'ilgan?",
+      "id": "q-4i1407wycuk",
+      "categoryId": "cat-43jc8mw",
+      "questionText": "Frontend uchun mashhur build tool (V bilan boshlanadi)?",
       "type": "written",
-      "correctWrittenAnswer": "783",
+      "correctWrittenAnswer": "Vite",
       "exactMatchRequired": false
     }
   ],
   "accessCodes": [
     {
-      "code": "121958",
-      "categoryId": "cat-oadl180",
-      "categoryName": "Mukammal Test 4",
+      "code": "249142",
+      "categoryId": "cat-43jc8mw",
+      "categoryName": "Vercel Test Category",
       "durationMinutes": 5,
       "questionCount": 2,
-      "createdAt": 1788666510711,
-      "expiresAt": 1788666630711,
+      "createdAt": 1788670704282,
+      "expiresAt": 1788670824282,
       "isUsed": true,
       "createdBy": "20090915"
     }
@@ -634,29 +606,105 @@
         "q-5ijvnmdnscp",
         "q-gcs15lx3lc"
       ]
+    },
+    "sess-1sibstvth": {
+      "sessionId": "sess-1sibstvth",
+      "accessCode": "249142",
+      "studentName": "Zarifjon AI (Vercel Test)",
+      "categoryId": "cat-43jc8mw",
+      "categoryName": "Vercel Test Category",
+      "questions": [
+        {
+          "id": "q-3o7omuswvsn",
+          "categoryId": "cat-43jc8mw",
+          "questionText": "Vercel qaysi til va frameworklar uchun juda mashhur?",
+          "type": "multiple_choice",
+          "options": [
+            "React/Next.js",
+            "Python/Django",
+            "PHP/Laravel",
+            "Java/Spring"
+          ],
+          "orderIndex": 1
+        },
+        {
+          "id": "q-4i1407wycuk",
+          "categoryId": "cat-43jc8mw",
+          "questionText": "Frontend uchun mashhur build tool (V bilan boshlanadi)?",
+          "type": "written",
+          "orderIndex": 2
+        }
+      ],
+      "durationMinutes": 5,
+      "startedAt": 1788670704293,
+      "expiresAt": 1788671004293,
+      "status": "completed",
+      "questionIds": [
+        "q-3o7omuswvsn",
+        "q-4i1407wycuk"
+      ]
     }
   },
   "results": [
     {
-      "id": "res-znfgqkkk",
+      "id": "res-p8ood9an",
+      "sessionId": "sess-1sibstvth",
+      "studentName": "Zarifjon AI (Vercel Test)",
+      "categoryId": "cat-43jc8mw",
+      "categoryName": "Vercel Test Category",
+      "totalQuestions": 2,
+      "multipleChoiceCount": 1,
+      "writtenCount": 1,
+      "correctCount": 2,
+      "scorePercent": 100,
+      "isPassed": true,
+      "terminationReason": "normal",
+      "submittedAt": 1788670704299,
+      "durationSpentSeconds": 1,
+      "answersBreakdown": [
+        {
+          "questionId": "q-3o7omuswvsn",
+          "questionText": "Vercel qaysi til va frameworklar uchun juda mashhur?",
+          "type": "multiple_choice",
+          "options": [
+            "React/Next.js",
+            "Python/Django",
+            "PHP/Laravel",
+            "Java/Spring"
+          ],
+          "studentAnswer": 0,
+          "correctAnswer": 0,
+          "isCorrect": true
+        },
+        {
+          "questionId": "q-4i1407wycuk",
+          "questionText": "Frontend uchun mashhur build tool (V bilan boshlanadi)?",
+          "type": "written",
+          "studentAnswer": "Vite",
+          "correctAnswer": "Vite",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "isPassed": true,
+      "correctCount": 2,
       "sessionId": "sess-f4knrpwbu",
-      "studentName": "Zarifjon AI Test Bot (Alochi)",
+      "id": "res-znfgqkkk",
+      "submittedAt": 1788666510730,
+      "multipleChoiceCount": 1,
+      "terminationReason": "normal",
       "categoryId": "cat-oadl180",
       "categoryName": "Mukammal Test 4",
-      "totalQuestions": 2,
-      "multipleChoiceCount": 1,
-      "writtenCount": 1,
-      "correctCount": 2,
+      "studentName": "Zarifjon AI Test Bot (Alochi)",
       "scorePercent": 100,
-      "isPassed": true,
-      "terminationReason": "normal",
-      "submittedAt": 1788666510730,
       "durationSpentSeconds": 1,
+      "totalQuestions": 2,
       "answersBreakdown": [
         {
-          "questionId": "q-5ijvnmdnscp",
-          "questionText": "O'zbekistonning poytaxti qayer?",
           "type": "multiple_choice",
+          "correctAnswer": 0,
+          "isCorrect": true,
           "options": [
             "Toshkent",
             "Samarqand",
@@ -664,242 +712,251 @@
             "Xiva"
           ],
           "studentAnswer": 0,
-          "correctAnswer": 0,
-          "isCorrect": true
+          "questionText": "O'zbekistonning poytaxti qayer?",
+          "questionId": "q-5ijvnmdnscp"
         },
         {
-          "questionId": "q-gcs15lx3lc",
           "questionText": "Al Xorazmiy qachon tug'ilgan?",
-          "type": "written",
           "studentAnswer": "783",
-          "correctAnswer": "783",
-          "isCorrect": true
+          "type": "written",
+          "isCorrect": true,
+          "questionId": "q-gcs15lx3lc",
+          "correctAnswer": "783"
         }
-      ]
+      ],
+      "writtenCount": 1
     },
     {
-      "id": "res-g6bbprnr",
-      "sessionId": "sess-gqy59x6kn",
-      "studentName": "Zarifjon AI Test Bot (Alochi)",
       "categoryId": "cat-g002amu",
-      "categoryName": "Mukammal Test",
-      "totalQuestions": 2,
       "multipleChoiceCount": 2,
-      "writtenCount": 0,
-      "correctCount": 0,
+      "sessionId": "sess-gqy59x6kn",
+      "id": "res-g6bbprnr",
       "scorePercent": 0,
-      "isPassed": false,
+      "categoryName": "Mukammal Test",
+      "answersBreakdown": [
+        {
+          "options": [
+            "Toshkent",
+            "Samarqand",
+            "Buxoro",
+            "Xiva"
+          ],
+          "type": "multiple_choice",
+          "correctAnswer": 0,
+          "questionText": "O'zbekistonning poytaxti qayer?",
+          "isCorrect": false,
+          "questionId": null,
+          "studentAnswer": 783
+        },
+        {
+          "type": "multiple_choice",
+          "options": [
+            "Toshkent",
+            "Samarqand",
+            "Buxoro",
+            "Xiva"
+          ],
+          "questionId": null,
+          "isCorrect": false,
+          "correctAnswer": 0,
+          "studentAnswer": 783,
+          "questionText": "O'zbekistonning poytaxti qayer?"
+        }
+      ],
+      "studentName": "Zarifjon AI Test Bot (Alochi)",
+      "durationSpentSeconds": 1,
+      "writtenCount": 0,
       "terminationReason": "normal",
       "submittedAt": 1788666499458,
-      "durationSpentSeconds": 1,
-      "answersBreakdown": [
-        {
-          "questionText": "O'zbekistonning poytaxti qayer?",
-          "type": "multiple_choice",
-          "options": [
-            "Toshkent",
-            "Samarqand",
-            "Buxoro",
-            "Xiva"
-          ],
-          "studentAnswer": 783,
-          "correctAnswer": 0,
-          "isCorrect": false
-        },
-        {
-          "questionText": "O'zbekistonning poytaxti qayer?",
-          "type": "multiple_choice",
-          "options": [
-            "Toshkent",
-            "Samarqand",
-            "Buxoro",
-            "Xiva"
-          ],
-          "studentAnswer": 783,
-          "correctAnswer": 0,
-          "isCorrect": false
-        }
-      ]
+      "totalQuestions": 2,
+      "correctCount": 0,
+      "isPassed": false
     },
     {
-      "id": "res-4d4b4c71",
-      "sessionId": "sess-r7ipind6n",
-      "studentName": "Zarifjon AI Test Bot (Alochi)",
-      "categoryId": "cat-zernpyk",
-      "categoryName": "Mukammal Test",
-      "totalQuestions": 2,
-      "multipleChoiceCount": 2,
-      "writtenCount": 0,
-      "correctCount": 0,
-      "scorePercent": 0,
-      "isPassed": false,
-      "terminationReason": "normal",
       "submittedAt": 1788666488069,
-      "durationSpentSeconds": 1,
-      "answersBreakdown": [
-        {
-          "questionText": "O'zbekistonning poytaxti qayer?",
-          "type": "multiple_choice",
-          "options": [
-            "Toshkent",
-            "Samarqand",
-            "Buxoro",
-            "Xiva"
-          ],
-          "studentAnswer": 783,
-          "correctAnswer": 0,
-          "isCorrect": false
-        },
-        {
-          "questionText": "O'zbekistonning poytaxti qayer?",
-          "type": "multiple_choice",
-          "options": [
-            "Toshkent",
-            "Samarqand",
-            "Buxoro",
-            "Xiva"
-          ],
-          "studentAnswer": 783,
-          "correctAnswer": 0,
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "id": "res-n2tzhziu",
-      "sessionId": "sess-ldzwt435c",
-      "studentName": "Zarifjon AI Test Bot",
-      "categoryId": "cat-xvrt9dj",
-      "categoryName": "AI tomonidan yaratilgan test",
-      "totalQuestions": 2,
-      "multipleChoiceCount": 2,
-      "writtenCount": 0,
-      "correctCount": 0,
+      "categoryName": "Mukammal Test",
+      "terminationReason": "normal",
       "scorePercent": 0,
+      "writtenCount": 0,
+      "id": "res-4d4b4c71",
+      "correctCount": 0,
+      "sessionId": "sess-r7ipind6n",
       "isPassed": false,
-      "terminationReason": "normal",
+      "categoryId": "cat-zernpyk",
+      "multipleChoiceCount": 2,
+      "totalQuestions": 2,
+      "durationSpentSeconds": 1,
+      "studentName": "Zarifjon AI Test Bot (Alochi)",
+      "answersBreakdown": [
+        {
+          "questionId": null,
+          "isCorrect": false,
+          "questionText": "O'zbekistonning poytaxti qayer?",
+          "correctAnswer": 0,
+          "type": "multiple_choice",
+          "studentAnswer": 783,
+          "options": [
+            "Toshkent",
+            "Samarqand",
+            "Buxoro",
+            "Xiva"
+          ]
+        },
+        {
+          "options": [
+            "Toshkent",
+            "Samarqand",
+            "Buxoro",
+            "Xiva"
+          ],
+          "studentAnswer": 783,
+          "questionText": "O'zbekistonning poytaxti qayer?",
+          "correctAnswer": 0,
+          "isCorrect": false,
+          "type": "multiple_choice",
+          "questionId": null
+        }
+      ]
+    },
+    {
+      "categoryId": "cat-xvrt9dj",
+      "totalQuestions": 2,
+      "isPassed": false,
+      "answersBreakdown": [
+        {
+          "questionText": "O'zbekistonning poytaxti qayer?",
+          "isCorrect": false,
+          "type": "multiple_choice",
+          "questionId": null,
+          "studentAnswer": 783,
+          "options": [
+            "Toshkent",
+            "Samarqand",
+            "Buxoro",
+            "Xiva"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "isCorrect": false,
+          "questionId": null,
+          "studentAnswer": 783,
+          "options": [
+            "Toshkent",
+            "Samarqand",
+            "Buxoro",
+            "Xiva"
+          ],
+          "type": "multiple_choice",
+          "questionText": "O'zbekistonning poytaxti qayer?",
+          "correctAnswer": 0
+        }
+      ],
+      "sessionId": "sess-ldzwt435c",
+      "correctCount": 0,
+      "studentName": "Zarifjon AI Test Bot",
+      "durationSpentSeconds": 1,
+      "multipleChoiceCount": 2,
       "submittedAt": 1788666465339,
-      "durationSpentSeconds": 1,
-      "answersBreakdown": [
-        {
-          "questionText": "O'zbekistonning poytaxti qayer?",
-          "type": "multiple_choice",
-          "options": [
-            "Toshkent",
-            "Samarqand",
-            "Buxoro",
-            "Xiva"
-          ],
-          "studentAnswer": 783,
-          "correctAnswer": 0,
-          "isCorrect": false
-        },
-        {
-          "questionText": "O'zbekistonning poytaxti qayer?",
-          "type": "multiple_choice",
-          "options": [
-            "Toshkent",
-            "Samarqand",
-            "Buxoro",
-            "Xiva"
-          ],
-          "studentAnswer": 783,
-          "correctAnswer": 0,
-          "isCorrect": false
-        }
-      ]
+      "id": "res-n2tzhziu",
+      "writtenCount": 0,
+      "terminationReason": "normal",
+      "categoryName": "AI tomonidan yaratilgan test",
+      "scorePercent": 0
     },
     {
-      "id": "res-9xqkcadj",
-      "sessionId": "sess-v5juvytor",
-      "studentName": "Zarifjon AI Bot",
-      "categoryId": "cat-021u5ll",
-      "categoryName": "Hayotiy savol",
-      "totalQuestions": 2,
-      "multipleChoiceCount": 1,
-      "writtenCount": 1,
-      "correctCount": 1,
-      "scorePercent": 50,
-      "isPassed": false,
-      "terminationReason": "normal",
-      "submittedAt": 1788666443837,
-      "durationSpentSeconds": 1,
       "answersBreakdown": [
         {
-          "questionId": "q-7u8gyh5",
-          "questionText": "Aziz kim",
-          "type": "multiple_choice",
-          "options": [
-            "Odam",
-            "Alkash",
-            "Djigar",
-            "Kot"
-          ],
+          "correctAnswer": 0,
           "studentAnswer": null,
-          "correctAnswer": 0,
-          "isCorrect": false
-        },
-        {
-          "questionId": "q-d8dfvuw",
-          "questionText": "Ismiz nima",
-          "type": "written",
-          "studentAnswer": "AI generated answer",
-          "correctAnswer": "",
-          "isCorrect": true
-        }
-      ]
-    },
-    {
-      "terminationReason": "normal",
-      "id": "res-547xmoxa",
-      "writtenCount": 1,
-      "durationSpentSeconds": 11,
-      "isPassed": true,
-      "studentName": "Aziz",
-      "sessionId": "sess-rj94cgimi",
-      "categoryName": "Hayotiy savol",
-      "categoryId": "cat-021u5ll",
-      "totalQuestions": 2,
-      "scorePercent": 100,
-      "submittedAt": 1788665578800,
-      "multipleChoiceCount": 1,
-      "correctCount": 2,
-      "answersBreakdown": [
-        {
+          "isCorrect": false,
           "questionText": "Aziz kim",
-          "correctAnswer": 0,
-          "isCorrect": true,
           "options": [
             "Odam",
             "Alkash",
             "Djigar",
             "Kot"
           ],
-          "studentAnswer": 0,
-          "type": "multiple_choice",
-          "questionId": "q-7u8gyh5"
+          "questionId": "q-7u8gyh5",
+          "type": "multiple_choice"
         },
         {
+          "correctAnswer": "",
+          "isCorrect": true,
+          "studentAnswer": "AI generated answer",
           "type": "written",
           "questionId": "q-d8dfvuw",
-          "studentAnswer": "kot",
-          "isCorrect": true,
-          "correctAnswer": "",
           "questionText": "Ismiz nima"
         }
-      ]
+      ],
+      "categoryId": "cat-021u5ll",
+      "terminationReason": "normal",
+      "correctCount": 1,
+      "studentName": "Zarifjon AI Bot",
+      "sessionId": "sess-v5juvytor",
+      "totalQuestions": 2,
+      "multipleChoiceCount": 1,
+      "submittedAt": 1788666443837,
+      "durationSpentSeconds": 1,
+      "writtenCount": 1,
+      "isPassed": false,
+      "id": "res-9xqkcadj",
+      "categoryName": "Hayotiy savol",
+      "scorePercent": 50
     },
     {
-      "scorePercent": 30,
-      "submittedAt": 1788606343838,
+      "studentName": "Aziz",
+      "terminationReason": "normal",
+      "totalQuestions": 2,
+      "categoryName": "Hayotiy savol",
+      "durationSpentSeconds": 11,
+      "scorePercent": 100,
+      "isPassed": true,
+      "writtenCount": 1,
+      "correctCount": 2,
+      "multipleChoiceCount": 1,
+      "answersBreakdown": [
+        {
+          "isCorrect": true,
+          "questionId": "q-7u8gyh5",
+          "type": "multiple_choice",
+          "correctAnswer": 0,
+          "options": [
+            "Odam",
+            "Alkash",
+            "Djigar",
+            "Kot"
+          ],
+          "questionText": "Aziz kim",
+          "studentAnswer": 0
+        },
+        {
+          "questionId": "q-d8dfvuw",
+          "isCorrect": true,
+          "studentAnswer": "kot",
+          "correctAnswer": "",
+          "questionText": "Ismiz nima",
+          "type": "written"
+        }
+      ],
+      "id": "res-547xmoxa",
+      "categoryId": "cat-021u5ll",
+      "submittedAt": 1788665578800,
+      "sessionId": "sess-rj94cgimi"
+    },
+    {
+      "terminationReason": "normal",
+      "studentName": "Zarifjon",
+      "isPassed": false,
       "multipleChoiceCount": 9,
-      "id": "res-fxq0saeu",
+      "correctCount": 3,
+      "categoryId": "cat-backend",
       "answersBreakdown": [
         {
           "questionId": "q-be-1",
+          "isCorrect": true,
           "studentAnswer": 0,
           "questionText": "Node.js nima vazifani bajaradi?",
-          "isCorrect": true,
           "type": "multiple_choice",
           "correctAnswer": 0,
           "options": [
@@ -910,16 +967,17 @@
           ]
         },
         {
-          "correctAnswer": "HTTPS",
-          "questionId": "q-be-10",
-          "isCorrect": false,
+          "type": "written",
           "questionText": "Xavfsiz, shifrlangan HTTP protokolining qisqartmasi nima? (Masalan: HTTPS)",
           "studentAnswer": "x",
-          "type": "written"
+          "correctAnswer": "HTTPS",
+          "questionId": "q-be-10",
+          "isCorrect": false
         },
         {
+          "questionId": "q-be-2",
           "correctAnswer": 0,
-          "type": "multiple_choice",
+          "questionText": "Express.js da GET so‘rovlarini qabul qilish uchun qaysi metod ishlatiladi?",
           "isCorrect": false,
           "options": [
             "app.get()",
@@ -927,69 +985,66 @@
             "app.listen()",
             "app.use()"
           ],
-          "questionText": "Express.js da GET so‘rovlarini qabul qilish uchun qaysi metod ishlatiladi?",
-          "questionId": "q-be-2",
-          "studentAnswer": 2
+          "studentAnswer": 2,
+          "type": "multiple_choice"
         },
         {
+          "questionId": "q-be-3",
+          "type": "multiple_choice",
           "correctAnswer": 1,
+          "studentAnswer": 1,
+          "questionText": "Frontend va Backend o‘rtasida ma'lumot uzatishda eng keng tarqalgan format qaysi?",
           "options": [
             "XML",
             "JSON",
             "CSV",
             "YAML"
           ],
-          "isCorrect": true,
-          "type": "multiple_choice",
-          "questionId": "q-be-3",
-          "questionText": "Frontend va Backend o‘rtasida ma'lumot uzatishda eng keng tarqalgan format qaysi?",
-          "studentAnswer": 1
+          "isCorrect": true
         },
         {
-          "questionId": "q-be-4",
-          "isCorrect": true,
-          "questionText": "HTTP 200 status kodi nimani bildiradi?",
-          "correctAnswer": 2,
-          "type": "multiple_choice",
-          "studentAnswer": 2,
           "options": [
             "Xatolik yuz berdi",
             "Resurs topilmadi",
             "So‘rov muvaffaqiyatli bajarildi (OK)",
             "Server vaqtincha ishlamayapti"
-          ]
+          ],
+          "questionId": "q-be-4",
+          "questionText": "HTTP 200 status kodi nimani bildiradi?",
+          "studentAnswer": 2,
+          "type": "multiple_choice",
+          "isCorrect": true,
+          "correctAnswer": 2
         },
         {
-          "questionText": "Mijoz so‘ragan sahifa yoki resurs serverda topilmasa, qaysi HTTP status kodi qaytariladi?",
+          "type": "multiple_choice",
+          "isCorrect": false,
+          "correctAnswer": 0,
           "options": [
             "404 Not Found",
             "500 Internal Error",
             "200 OK",
             "301 Moved"
           ],
-          "correctAnswer": 0,
-          "isCorrect": false,
           "questionId": "q-be-5",
           "studentAnswer": 3,
-          "type": "multiple_choice"
+          "questionText": "Mijoz so‘ragan sahifa yoki resurs serverda topilmasa, qaysi HTTP status kodi qaytariladi?"
         },
         {
+          "questionText": "Serverga yangi ma'lumot jo‘natish yoki resurs yaratishda qaysi HTTP metodi qo‘llaniladi?",
+          "isCorrect": false,
+          "type": "multiple_choice",
+          "questionId": "q-be-6",
+          "studentAnswer": 3,
+          "correctAnswer": 1,
           "options": [
             "GET",
             "POST",
             "DELETE",
             "HEAD"
-          ],
-          "questionId": "q-be-6",
-          "studentAnswer": 3,
-          "type": "multiple_choice",
-          "correctAnswer": 1,
-          "questionText": "Serverga yangi ma'lumot jo‘natish yoki resurs yaratishda qaysi HTTP metodi qo‘llaniladi?",
-          "isCorrect": false
+          ]
         },
         {
-          "correctAnswer": 0,
-          "isCorrect": false,
           "type": "multiple_choice",
           "options": [
             "npm (Node Package Manager)",
@@ -997,13 +1052,13 @@
             "composer",
             "cargo"
           ],
-          "questionText": "Node.js loyihalarida tashqi paketlar va kutubxonalarni boshqaruvchi tizim nima deb ataladi?",
           "questionId": "q-be-7",
+          "correctAnswer": 0,
+          "isCorrect": false,
+          "questionText": "Node.js loyihalarida tashqi paketlar va kutubxonalarni boshqaruvchi tizim nima deb ataladi?",
           "studentAnswer": 2
         },
         {
-          "studentAnswer": 2,
-          "isCorrect": false,
           "options": [
             "index.html faylida",
             ".env faylida va environment o‘zgaruvchilarida",
@@ -1011,14 +1066,15 @@
             "Brauzer konsolida"
           ],
           "questionText": "Nozik ma'lumotlar (masalan, API kalitlar, DB parollari) qayerda xavfsiz saqlanishi kerak?",
-          "type": "multiple_choice",
+          "isCorrect": false,
+          "studentAnswer": 2,
           "questionId": "q-be-8",
+          "type": "multiple_choice",
           "correctAnswer": 1
         },
         {
-          "type": "multiple_choice",
-          "correctAnswer": 0,
           "questionText": "Express middleware funksiyasida navbatdagi qadamga o‘tish uchun qaysi funksiya chaqiriladi?",
+          "questionId": "q-be-9",
           "options": [
             "next()",
             "forward()",
@@ -1026,80 +1082,88 @@
             "proceed()"
           ],
           "isCorrect": false,
-          "questionId": "q-be-9",
+          "type": "multiple_choice",
+          "correctAnswer": 0,
           "studentAnswer": 3
         }
       ],
-      "sessionId": "sess-58aul4a5q",
-      "correctCount": 3,
-      "writtenCount": 1,
-      "studentName": "Zarifjon",
+      "id": "res-fxq0saeu",
       "totalQuestions": 10,
-      "isPassed": false,
+      "writtenCount": 1,
+      "sessionId": "sess-58aul4a5q",
       "categoryName": "Backend testlari",
+      "scorePercent": 30,
       "durationSpentSeconds": 36,
-      "terminationReason": "normal",
-      "categoryId": "cat-backend"
+      "submittedAt": 1788606343838
     },
     {
-      "id": "res-vi1f2fe7",
+      "scorePercent": 100,
+      "categoryName": "JavaScript testlari",
+      "categoryId": "cat-js",
       "writtenCount": 1,
+      "sessionId": "sess-6uk588xbq",
+      "submittedAt": 1788603741136,
+      "studentName": "Ali Valiyev",
+      "id": "res-vi1f2fe7",
+      "multipleChoiceCount": 9,
+      "durationSpentSeconds": 5,
+      "correctCount": 10,
       "answersBreakdown": [
         {
           "questionText": "JavaScript tilida o‘zgaruvchi e‘lon qilish uchun qaysi kalit so‘zlardan foydalaniladi?",
+          "studentAnswer": 0,
+          "correctAnswer": 0,
+          "questionId": "q-js-1",
           "type": "multiple_choice",
+          "isCorrect": true,
           "options": [
             "let, const, var",
             "int, float, double",
             "def, lambda, dim",
             "make, new, class"
-          ],
-          "studentAnswer": 0,
-          "isCorrect": true,
-          "questionId": "q-js-1",
-          "correctAnswer": 0
+          ]
         },
         {
+          "studentAnswer": 1,
+          "questionId": "q-js-2",
+          "correctAnswer": 1,
+          "isCorrect": true,
           "options": [
             "number",
             "string",
             "boolean",
             "undefined"
           ],
-          "studentAnswer": 1,
-          "isCorrect": true,
           "questionText": "console.log(typeof \"Salom Dunyo\") buyrug‘i konsolga qanday natija chiqaradi?",
-          "correctAnswer": 1,
-          "questionId": "q-js-2",
           "type": "multiple_choice"
         },
         {
-          "studentAnswer": 2,
+          "correctAnswer": 2,
           "options": [
             "( ) dumaloq qavs",
             "{ } jingalak qavs",
             "[ ] to‘rtburchak qavs",
             "< > burchakli qavs"
           ],
-          "questionId": "q-js-3",
+          "questionText": "JavaScriptda massiv (array) elementlari qaysi qavslar orasida yoziladi?",
+          "studentAnswer": 2,
           "type": "multiple_choice",
           "isCorrect": true,
-          "questionText": "JavaScriptda massiv (array) elementlari qaysi qavslar orasida yoziladi?",
-          "correctAnswer": 2
+          "questionId": "q-js-3"
         },
         {
+          "questionText": "5 === \"5\" ifodasi qanday natija qaytaradi?",
+          "studentAnswer": 1,
+          "questionId": "q-js-4",
           "correctAnswer": 1,
           "isCorrect": true,
+          "type": "multiple_choice",
           "options": [
             "true",
             "false",
             "undefined",
             "NaN"
-          ],
-          "type": "multiple_choice",
-          "questionText": "5 === \"5\" ifodasi qanday natija qaytaradi?",
-          "questionId": "q-js-4",
-          "studentAnswer": 1
+          ]
         },
         {
           "options": [
@@ -1108,89 +1172,80 @@
             "push()",
             "unshift()"
           ],
-          "studentAnswer": 2,
           "type": "multiple_choice",
+          "questionId": "q-js-5",
           "isCorrect": true,
           "questionText": "Massivning oxiriga yangi element qo‘shish uchun qaysi metod ishlatiladi?",
-          "correctAnswer": 2,
-          "questionId": "q-js-5"
+          "studentAnswer": 2,
+          "correctAnswer": 2
         },
         {
-          "studentAnswer": 0,
-          "questionText": "Quyidagilardan qaysi biri JavaScriptda takrorlanish (loop) operatori hisoblanadi?",
-          "questionId": "q-js-6",
+          "correctAnswer": 0,
+          "type": "multiple_choice",
           "isCorrect": true,
+          "studentAnswer": 0,
           "options": [
             "for",
             "if",
             "switch",
             "return"
           ],
-          "correctAnswer": 0,
-          "type": "multiple_choice"
+          "questionText": "Quyidagilardan qaysi biri JavaScriptda takrorlanish (loop) operatori hisoblanadi?",
+          "questionId": "q-js-6"
         },
         {
-          "questionText": "Funksiya qiymat qaytarishi uchun qaysi kalit so‘zdan foydalaniladi?",
+          "isCorrect": true,
+          "type": "multiple_choice",
           "questionId": "q-js-7",
-          "studentAnswer": 1,
           "options": [
             "send",
             "return",
             "give",
             "output"
           ],
-          "isCorrect": true,
           "correctAnswer": 1,
-          "type": "multiple_choice"
+          "questionText": "Funksiya qiymat qaytarishi uchun qaysi kalit so‘zdan foydalaniladi?",
+          "studentAnswer": 1
         },
         {
           "questionText": "Math.max(10, 45, 12, 88, 3) ifodasi qanday sonni qaytaradi?",
-          "isCorrect": true,
-          "correctAnswer": 2,
+          "type": "multiple_choice",
           "studentAnswer": 2,
+          "correctAnswer": 2,
+          "questionId": "q-js-8",
           "options": [
             "10",
             "45",
             "88",
             "3"
           ],
-          "questionId": "q-js-8",
-          "type": "multiple_choice"
+          "isCorrect": true
         },
         {
-          "questionId": "q-js-9",
-          "questionText": "HTML elementini ID orqali tanlab olish uchun qaysi DOM metodi ishlatiladi?",
           "studentAnswer": 0,
+          "isCorrect": true,
+          "questionText": "HTML elementini ID orqali tanlab olish uchun qaysi DOM metodi ishlatiladi?",
+          "correctAnswer": 0,
+          "type": "multiple_choice",
           "options": [
             "document.getElementById()",
             "document.selectId()",
             "window.findNode()",
             "element.find()"
           ],
-          "correctAnswer": 0,
-          "type": "multiple_choice",
-          "isCorrect": true
+          "questionId": "q-js-9"
         },
         {
           "questionId": "q-js-10",
-          "correctAnswer": "&&",
-          "isCorrect": true,
-          "type": "written",
           "studentAnswer": "&&",
-          "questionText": "JavaScriptda mantiqiy \"VA\" (AND) operatori qaysi belgi orqali yoziladi? (Masalan: && yoki ||)"
+          "correctAnswer": "&&",
+          "type": "written",
+          "questionText": "JavaScriptda mantiqiy \"VA\" (AND) operatori qaysi belgi orqali yoziladi? (Masalan: && yoki ||)",
+          "isCorrect": true
         }
       ],
-      "studentName": "Ali Valiyev",
-      "categoryName": "JavaScript testlari",
-      "sessionId": "sess-6uk588xbq",
-      "scorePercent": 100,
-      "totalQuestions": 10,
-      "durationSpentSeconds": 5,
       "terminationReason": "normal",
-      "categoryId": "cat-js",
-      "correctCount": 10,
-      "submittedAt": 1788603741136,
-      "multipleChoiceCount": 9,
+      "totalQuestions": 10,
       "isPassed": true
     }
   ]
