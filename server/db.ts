@@ -33,8 +33,14 @@ const DATA_DIR = path.join(process.cwd(), 'server', 'data');
 const DB_FILE = path.join(DATA_DIR, 'test_sayti.json');
 
 // Ensure directory exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+if (!process.env.VERCEL) {
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+  } catch (e) {
+    console.warn("Could not create DATA_DIR. Vercel environment detected.", e);
+  }
 }
 
 // Helper to remove/convert undefined values for Firestore compatibility
@@ -512,7 +518,9 @@ class TestSaytiDB {
 
   private persist(dataToSave = this.data) {
     try {
-      fs.writeFileSync(DB_FILE, JSON.stringify(dataToSave, null, 2), 'utf-8');
+      if (!process.env.VERCEL) {
+        fs.writeFileSync(DB_FILE, JSON.stringify(dataToSave, null, 2), 'utf-8');
+      }
     } catch (e) {
       console.error('Failed to write database file:', e);
     }
